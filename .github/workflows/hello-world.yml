@@ -2,11 +2,8 @@
 
 name: Hello World
 # Controls when the workflow will run
-on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
+on: 
   push:
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -14,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
  steps:
       - name: hello-job
-        run: 'echo "Hello, world!"'
+        run: echo "Hello, world!"
